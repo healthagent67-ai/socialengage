@@ -1,0 +1,23 @@
+<svg width="900" height="380" viewBox="0 0 900 380" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="semGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF8FB1"/>
+      <stop offset="45%" stop-color="#A96FE0"/>
+      <stop offset="100%" stop-color="#6C7CE8"/>
+    </linearGradient>
+    <linearGradient id="swooshGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFB27A"/>
+      <stop offset="100%" stop-color="#A96FE0"/>
+    </linearGradient>
+    <filter id="soft1" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#5B3E96" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <path d="M 90 300 Q 260 380 450 300 Q 640 220 800 300" fill="none" stroke="url(#swooshGrad1)" stroke-width="10" stroke-linecap="round" opacity="0.55"/>
+
+  <text x="450" y="230" text-anchor="middle" font-family="'Arial Black','Segoe UI',Arial,sans-serif" font-weight="900" font-size="220" letter-spacing="-6" fill="url(#semGrad1)" filter="url(#soft1)">SEM</text>
+
+  <circle cx="678" cy="88" r="9" fill="#FFB27A"/>
+  <circle cx="712" cy="112" r="5" fill="#FF8FB1"/>
+</svg>
