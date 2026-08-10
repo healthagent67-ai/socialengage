@@ -496,18 +496,40 @@ button:disabled { opacity: 0.7; cursor: not-allowed; }
 .pricing-strip {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  align-items: center;
+  gap: 20px 44px;
   flex-wrap: wrap;
   margin-top: 48px;
   text-align: center;
-  background: #EFE9FB;
-  border-radius: 12px;
-  padding: 20px;
+  background: var(--grad-band);
+  border-radius: 14px;
+  padding: 26px 28px;
+  box-shadow: 0 14px 34px rgba(169, 111, 224, 0.35);
 }
 .pricing-strip-item {
-  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--white);
+  border-radius: 999px;
+  padding: 10px 18px;
+  font-weight: 700;
   font-size: 0.92rem;
-  color: var(--ink-soft);
+  color: var(--ink);
+  box-shadow: 0 6px 16px rgba(35, 33, 58, 0.18);
+}
+.pricing-strip-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--grad-button);
+  color: var(--white);
+  font-size: 0.72rem;
+  font-weight: 800;
+  flex-shrink: 0;
 }
 
 /* Footer */
