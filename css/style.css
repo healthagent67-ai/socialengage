@@ -438,10 +438,8 @@ button:disabled { opacity: 0.7; cursor: not-allowed; }
 .price-card-starter { background: linear-gradient(180deg, #EEF1FC, #E4E9FB); border-color: #E4E9FB; }
 .price-card-business { background: linear-gradient(180deg, #F5EDFC, #EEE1FA); border-color: #EEE1FA; }
 .price-card-featured {
-  background: linear-gradient(160deg, #8358D6, #5B3AA0);
-  border-color: #5B3AA0;
-  color: var(--white);
-  transform: scale(1.03);
+  background: linear-gradient(180deg, #EDE1FA, #E2CDF6);
+  border-color: #E2CDF6;
 }
 .price-label {
   font-family: 'Poppins', sans-serif;
@@ -454,7 +452,7 @@ button:disabled { opacity: 0.7; cursor: not-allowed; }
 }
 .price-card-starter .price-label { color: #6C7CE8; }
 .price-card-business .price-label { color: #9B6FE3; }
-.price-card-featured .price-label { color: #FFB27A; }
+.price-card-featured .price-label { color: #6B21A8; }
 .price-amt {
   font-family: 'Poppins', sans-serif;
   font-weight: 800;
@@ -464,9 +462,8 @@ button:disabled { opacity: 0.7; cursor: not-allowed; }
 }
 .price-card-starter .price-amt { color: #4E5FDB; }
 .price-card-business .price-amt { color: #9257D9; }
-.price-card-featured .price-amt { color: var(--white); }
+.price-card-featured .price-amt { color: #6B21A8; }
 .price-amt span { font-size: 1rem; font-weight: 500; color: var(--ink-soft); }
-.price-card-featured .price-amt span { color: rgba(255,255,255,0.7); }
 .price-feat {
   list-style: none;
   flex-grow: 1;
@@ -479,8 +476,8 @@ button:disabled { opacity: 0.7; cursor: not-allowed; }
   position: relative;
 }
 .price-card-starter .price-feat li,
-.price-card-business .price-feat li { border-bottom-color: rgba(120,100,160,0.18); }
-.price-card-featured .price-feat li { border-bottom-color: rgba(255,255,255,0.18); }
+.price-card-business .price-feat li,
+.price-card-featured .price-feat li { border-bottom-color: rgba(120,100,160,0.18); }
 .price-feat li::before {
   content: "✓";
   position: absolute;
@@ -490,7 +487,7 @@ button:disabled { opacity: 0.7; cursor: not-allowed; }
 }
 .price-card-starter .price-feat li::before { color: #4E5FDB; }
 .price-card-business .price-feat li::before { color: #9257D9; }
-.price-card-featured .price-feat li::before { color: var(--white); }
+.price-card-featured .price-feat li::before { color: #6B21A8; }
 .price-feat li:last-child { border-bottom: none; }
 
 .pricing-strip {
