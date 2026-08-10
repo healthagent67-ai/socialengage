@@ -388,7 +388,7 @@ button:disabled { opacity: 0.7; cursor: not-allowed; }
 }
 
 /* Consultation Booking */
-.consultation { padding: 32px 0 88px; background: var(--bg-soft); }
+.consultation { padding: 32px 0 48px; background: var(--bg-soft); }
 .consultation-inner { max-width: 1040px; margin: 0 auto; text-align: center; }
 .consultation .section-title { margin-bottom: 12px; }
 .consultation .section-sub { margin-bottom: 40px; }
@@ -401,12 +401,12 @@ button:disabled { opacity: 0.7; cursor: not-allowed; }
   overflow: hidden;
 }
 
-/* Pricing */
-.pricing { padding: 88px 0 96px; background: var(--bg-soft); }
+/* Pricing — colors matched to the SEM Pricing PDF flyer */
+.pricing { padding: 56px 0 96px; background: var(--bg-soft); border-top: 1px solid var(--border); }
 .setup-bar {
   max-width: 900px;
   margin: 0 auto 40px;
-  background: var(--ink);
+  background: #372A5C;
   border-radius: 12px;
   color: var(--white);
   padding: 16px 26px;
@@ -416,9 +416,9 @@ button:disabled { opacity: 0.7; cursor: not-allowed; }
   flex-wrap: wrap;
   font-size: 0.95rem;
 }
-.setup-amt { color: var(--orange); font-weight: 800; font-size: 1.1rem; margin-right: 4px; }
+.setup-amt { color: #FF9D6C; font-weight: 800; font-size: 1.1rem; margin-right: 4px; }
 .setup-divider { width: 1px; align-self: stretch; background: rgba(255,255,255,0.25); }
-.setup-note { color: rgba(255,255,255,0.8); }
+.setup-note { color: #cfc9e8; }
 
 .pricing-grid {
   display: grid;
@@ -435,9 +435,11 @@ button:disabled { opacity: 0.7; cursor: not-allowed; }
   display: flex;
   flex-direction: column;
 }
+.price-card-starter { background: linear-gradient(180deg, #EEF1FC, #E4E9FB); border-color: #E4E9FB; }
+.price-card-business { background: linear-gradient(180deg, #F5EDFC, #EEE1FA); border-color: #EEE1FA; }
 .price-card-featured {
-  background: var(--ink);
-  border-color: var(--ink);
+  background: linear-gradient(160deg, #8358D6, #5B3AA0);
+  border-color: #5B3AA0;
   color: var(--white);
   transform: scale(1.03);
 }
@@ -450,7 +452,9 @@ button:disabled { opacity: 0.7; cursor: not-allowed; }
   color: var(--purple);
   margin-bottom: 10px;
 }
-.price-card-featured .price-label { color: var(--orange); }
+.price-card-starter .price-label { color: #6C7CE8; }
+.price-card-business .price-label { color: #9B6FE3; }
+.price-card-featured .price-label { color: #FFB27A; }
 .price-amt {
   font-family: 'Poppins', sans-serif;
   font-weight: 800;
@@ -458,6 +462,8 @@ button:disabled { opacity: 0.7; cursor: not-allowed; }
   color: var(--ink);
   margin-bottom: 22px;
 }
+.price-card-starter .price-amt { color: #4E5FDB; }
+.price-card-business .price-amt { color: #9257D9; }
 .price-card-featured .price-amt { color: var(--white); }
 .price-amt span { font-size: 1rem; font-weight: 500; color: var(--ink-soft); }
 .price-card-featured .price-amt span { color: rgba(255,255,255,0.7); }
@@ -472,7 +478,9 @@ button:disabled { opacity: 0.7; cursor: not-allowed; }
   border-bottom: 1px solid var(--border);
   position: relative;
 }
-.price-card-featured .price-feat li { border-bottom-color: rgba(255,255,255,0.15); }
+.price-card-starter .price-feat li,
+.price-card-business .price-feat li { border-bottom-color: rgba(120,100,160,0.18); }
+.price-card-featured .price-feat li { border-bottom-color: rgba(255,255,255,0.18); }
 .price-feat li::before {
   content: "✓";
   position: absolute;
@@ -480,7 +488,9 @@ button:disabled { opacity: 0.7; cursor: not-allowed; }
   color: var(--purple);
   font-weight: 700;
 }
-.price-card-featured .price-feat li::before { color: var(--orange); }
+.price-card-starter .price-feat li::before { color: #4E5FDB; }
+.price-card-business .price-feat li::before { color: #9257D9; }
+.price-card-featured .price-feat li::before { color: var(--white); }
 .price-feat li:last-child { border-bottom: none; }
 
 .pricing-strip {
@@ -490,6 +500,9 @@ button:disabled { opacity: 0.7; cursor: not-allowed; }
   flex-wrap: wrap;
   margin-top: 48px;
   text-align: center;
+  background: #EFE9FB;
+  border-radius: 12px;
+  padding: 20px;
 }
 .pricing-strip-item {
   font-weight: 600;
