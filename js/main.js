@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  setupForm('auditForm', 'formSuccess', 'formError', 'auditSubmitBtn', 'Get My Free Audit');
+  setupForm('auditForm', 'formSuccess', 'formError', 'auditSubmitBtn', 'Get My Free Mockup');
   setupForm('contactForm', 'contactSuccess', 'contactError', 'contactSubmitBtn', 'Send My Message');
 
   // Contact form: only ask for a URL when they already have a site
