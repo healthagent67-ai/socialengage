@@ -888,7 +888,7 @@ a.contact-detail:hover { text-decoration: underline; }
 .plans-intro { text-align: center; margin-bottom: 36px; }
 .plans-intro h3 { font-size: 1.3rem; margin-bottom: 6px; }
 .plans-intro p { color: var(--ink-soft); font-size: 0.95rem; }
-.pricing-grid-two { grid-template-columns: repeat(2, 1fr); max-width: 780px; margin: 0 auto; }
+.pricing-grid-three { grid-template-columns: repeat(3, 1fr); max-width: 980px; margin: 0 auto; }
 .price-card-starter .btn-outline { color: #4E5FDB; border-color: #4E5FDB; }
 
 /* Responsive */
@@ -902,7 +902,7 @@ a.contact-detail:hover { text-decoration: underline; }
   .hero-stat { border-right: none; border-bottom: 1px solid var(--border); }
   .hero-stat:last-child { border-bottom: none; }
   .price-main { padding: 32px 24px; }
-  .pricing-grid-two { max-width: 420px; }
+  .pricing-grid-three { grid-template-columns: 1fr; max-width: 420px; }
   .price-main-list li:nth-last-child(-n+2) { border-bottom: 1px solid rgba(255,255,255,0.14); }
   .price-main-list li:last-child { border-bottom: none; }
   .main-nav { display: none; }
